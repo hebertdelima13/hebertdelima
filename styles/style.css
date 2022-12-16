@@ -1,0 +1,367 @@
+/*Variables*/
+
+:root {
+  --bodybg: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(52, 7, 7, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  --primary: #000000;
+  --secondary: #340707;
+  --light: #ffffff;
+  --textlight: #ffffff;
+  --thin: 100;
+  --extraLight: 200;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
+  --bold: 700;
+  --extraBold: 800;
+  --black: 900;
+}
+
+/*Reset*/
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: var(--textlight);
+}
+
+body {
+  background: var(--bodybg);
+}
+
+main .section {
+  margin-top: 10rem;
+}
+
+/*Header*/
+
+header .logo {
+  max-height: 2rem;
+}
+
+header i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#header.header-bg {
+  background: var(--primary);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+}
+
+/*Main section patterns*/
+
+main .section h1 {
+  position: absolute;
+  font-size: 5rem;
+  font-weight: var(--black);
+  text-transform: uppercase;
+  opacity: 0.1;
+}
+
+main .section h6 {
+  font-size: 2rem;
+  font-weight: var(--medium);
+  margin-top: 2rem;
+}
+
+/*Sidebar*/
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sidebar .sidebar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dotted var(--secondary);
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.sidebar .sidebar-icon:hover {
+  transition: all 0.5s;
+  transform: rotate(45deg);
+  background: var(--secondary);
+}
+
+.sidebar .sidebar-icon:hover i {
+  transition: all 0.5s;
+  transform: rotate(-90deg);
+  background: var(--secondary);
+}
+
+.sidebar .sidebar-icon i {
+  font-size: 0.75rem;
+  font-weight: var(--medium);
+  transform: rotate(45deg);
+}
+
+/*Welcome section*/
+
+main .welcome-left {
+  mix-blend-mode: overlay;
+}
+
+main .welcome-right h6 {
+  font-size: 1rem;
+  font-weight: var(--thin);
+  opacity: 0.5;
+}
+
+main .welcome-right h1 {
+  font-size: 4rem;
+  font-weight: var(--black);
+  line-height: 3.5rem;
+}
+
+main .section .welcome-right p {
+  font-size: 1.1rem;
+  font-weight: var(--thin);
+  opacity: 0.8;
+}
+
+/*About me section*/
+
+main .section .aboutme p {
+  font-size: 0.75rem;
+  font-weight: var(--medium);
+  text-align: justify;
+}
+
+/*My skills section*/
+
+main .section .myskills img {
+  height: 2rem;
+}
+
+main .section .myskills .myskills-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dotted var(--secondary);
+  margin: 1.5rem 0;
+  width: 4rem;
+  height: 4rem;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+main .section .myskills .myskills-icon:hover {
+  transition: all 0.5s;
+  transform: rotate(45deg);
+  background: var(--secondary);
+}
+
+main .section .myskills .myskills-icon:hover img {
+  transition: all 0.5s;
+  transform: rotate(-90deg);
+  background: var(--secondary);
+}
+
+main .section .myskills .myskills-icon img {
+  font-size: 0.75rem;
+  font-weight: var(--medium);
+  transform: rotate(45deg);
+}
+
+/*Works*/
+
+main .section .works {
+  border: 1px dotted var(--secondary);
+  height: 80px;
+  transition: all 0.5s;
+  opacity: 0.1;
+}
+
+main .section .works h6 {
+  font-size: 0.9rem;
+  font-weight: var(--black);
+  margin: 0;
+}
+
+main .section .works p {
+  font-size: 0.75rem;
+  font-weight: var(--thin);
+  margin: 0;
+}
+
+main .section .works i {
+  font-size: 0.75rem;
+}
+
+main .section .works:hover {
+  background: var(--primary);
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+main .section .works .works-img {
+  background-size: cover;
+  background-position: left;
+  transition: all 0.5s;
+}
+
+main .section .works.projectone .works-img {
+  background-image: url(https://www.imagemhost.com.br/images/2022/12/12/login.png);
+}
+
+main .section .works.projecttwo .works-img {
+  background-image: url(https://i.ibb.co/qdyxbj3/housesale.png);
+}
+
+main .section .works.projectthree .works-img {
+  background-image: url(https://i.ibb.co/4N0BGNh/mobbanking.png);
+}
+
+main .section .works.projectfour .works-img {
+  background-image: url(https://i.ibb.co/MhMLFY6/agendafcamara.png);
+}
+
+/*Footer*/
+
+footer {
+  font-size: 0.625rem;
+  font-weight: var(--thin);
+  background: var(--primary);
+}
+
+/*Buttons*/
+
+.button {
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  background: var(--secondary);
+  border: 1px dotted var(--secondary);
+  right: 1rem;
+  bottom: 1rem;
+  transition: all 0.5s;
+}
+
+.button a {
+  font-size: 0.75rem;
+  color: var(--textlight);
+}
+
+.button a:hover {
+  color: #fff;
+}
+
+.button:hover {
+  transition: all 0.5s;
+  transform: scale(95%);
+  background: var(--primary);
+  border: 1px dotted var(--secondary);
+}
+
+.button i {
+  margin-left: 0.5rem;
+}
+
+/* Menu Toggle*/
+
+.toggle {
+  color: var(--light);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+header .icon-close {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: 0.2s;
+}
+
+header .menu {
+  visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+
+header .menu ul {
+  display: none;
+}
+
+header.show .menu {
+  opacity: 1;
+  visibility: visible;
+  background: var(--primary);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+header.show .menu li {
+  padding: 2rem 0;
+}
+
+header.show .menu a {
+  font-size: 2rem;
+  font-weight: var(--thin);
+  color: var(--textlight);
+  border: 1px dotted var(--secondary);
+  padding: 1rem 2rem;
+  transition: all 0.5s;
+}
+
+header.show .menu a:hover {
+  background: var(--secondary);
+  border: 1px dotted var(--secondary);
+  transition: all 0.5s;
+}
+
+header.show .menu ul {
+  display: block;
+}
+
+header.show .icon-menu {
+  display: none;
+}
+
+header.show .icon-close {
+  visibility: visible;
+  position: relative;
+  opacity: 1;
+  z-index: 99999;
+}
+
+/*Media queries*/
+
+@media (max-width: 720px) {
+  main .section {
+    margin-top: 5rem;
+  }
+
+  main .section h1 {
+    font-size: 4rem;
+  }
+
+  main .section h6 {
+    font-size: 2rem;
+    margin-top: 1.3rem;
+  }
+}
