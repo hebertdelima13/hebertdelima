@@ -19,8 +19,6 @@
     </h1>
 </div>
 
-<br>
-
 <h1 align="center">	
     Desktop
 </h1>
@@ -31,7 +29,6 @@
     <a href='https://www.imagemhost.com.br/images/2022/12/19/note.png'><img src="https://www.imagemhost.com.br/images/2022/12/19/note.png"  alt="Logo"  width="728"></a>
 </div>
 
-<br>
 <br>
 
 <h1 align="center">	
