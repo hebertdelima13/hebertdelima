@@ -1,12 +1,10 @@
 /*Variables*/
 
 :root {
-  --bodybg: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(52, 7, 7, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  --bodybg: linear-gradient(90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(52, 7, 7, 1) 50%,
+      rgba(0, 0, 0, 1) 100%);
   --primary: #000000;
   --secondary: #340707;
   --light: #ffffff;
@@ -224,7 +222,7 @@ main .section .works .works-img {
 }
 
 main .section .works.projectone .works-img {
-  background-image: url(https://www.imagemhost.com.br/images/2022/12/12/login.png);
+  background-image: url(https://raw.githubusercontent.com/hebertdelima13/autoRepairShop/main/src/assets/auto-mechanic-repairing-vehicle-engine-isolated-flat-vector-illustration-cartoon-man-fixing-checking-car-with-open-hood-garage_74855-8227.jpeg);
 }
 
 main .section .works.projecttwo .works-img {

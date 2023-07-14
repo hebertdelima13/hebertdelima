@@ -54,3 +54,10 @@ const scrollToIdOnClick = (event) => {
 menuItems.forEach((item) => {
   item.addEventListener("click", scrollToIdOnClick);
 });
+
+// Footer copyright ano atual
+
+const data = new Date
+const anoAtual = data.getFullYear()
+const dataFooter = document.querySelector('.ano-atual')
+dataFooter.innerHTML = anoAtual
